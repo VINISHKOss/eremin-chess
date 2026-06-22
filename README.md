@@ -72,6 +72,10 @@ git push -u origin main
 После деплоя сайт будет доступен по адресу вида:
 `https://eremin-chess.netlify.app`
 
+Текущий деплой: https://eremin-chess.netlify.app
+
+Сайт доступен по адресу: https://eremin-chess.netlify.app
+
 Ты можешь изменить название сайта в настройках Netlify, чтобы получить более короткий поддомен.
 
 ### Что мне нужно от тебя:
