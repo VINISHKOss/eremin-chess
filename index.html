@@ -1,0 +1,1616 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Еремин Александр Алексеевич • Шахматный клуб «Е-2 — Е-4» | Педагог дополнительного образования</title>
+    <meta name="description" content="Профессиональное обучение шахматам для детей от 5 до 17 лет в Златоусте. 15+ лет опыта. Развиваем мышление и характер через шахматы. Индивидуальные и групповые занятия в «Е-2 — Е-4».">
+    <meta name="keywords" content="шахматы, обучение шахматам, шахматный клуб, педагог шахмат, Еремин Александр, Е-2 Е-4, шахматы для детей, подготовка к турнирам">
+    
+    <!-- Open Graph / Social -->
+    <meta property="og:title" content="Еремин Александр Алексеевич • Шахматный клуб «Е-2 — Е-4»">
+    <meta property="og:description" content="Элегантное и эффективное обучение шахматам. Развиваем интеллект и характер. Запишитесь на пробное занятие.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://picsum.photos/id/1005/1200/630">
+    <meta property="og:url" content="https://e2e4-chess.ru">
+    
+    <meta name="twitter:card" content="summary_large_image">
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- Basic fallback styles in case Tailwind CDN is blocked on file:// -->
+    <style>
+      html, body { 
+        max-width: 100vw;
+        overflow-x: hidden;
+        background-color: #020617; 
+        color: #f8f1e3; 
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+        margin: 0;
+        padding: 0;
+      }
+      .bg-premium { background-color: #020617; }
+      .text-warm, .text-cream { color: #f8f1e3; }
+      .text-gold { color: #d4af37; }
+      .bg-navy { background-color: #0f172a; }
+    </style>
+    
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;family=Inter:wght@300;400;500&amp;family=Playfair+Display:wght@400&amp;display=swap');
+        
+        :root {
+            --navy: #0f172a;
+            --deep-navy: #020617;
+            --cream: #f5f5f0;
+            --offwhite: #f8f1e3;
+            --gold: #d4af37;
+            --bronze: #b8976a;
+        }
+
+        .tail-container {
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        /* Elegant typography */
+        .heading-serif {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 700;
+            letter-spacing: -0.025em;
+        }
+
+        .body-elegant {
+            font-family: 'Inter', system_ui, -apple-system, sans-serif;
+            font-feature-settings: "tnum";
+        }
+
+        /* Premium dark navy background */
+        .bg-premium {
+            background-color: #020617;
+        }
+        
+        .bg-navy {
+            background-color: #0f172a;
+        }
+
+        .text-cream {
+            color: #f5f5f0;
+        }
+        
+        .text-warm {
+            color: #f8f1e3;
+        }
+
+        .text-gold {
+            color: #d4af37;
+        }
+
+        .text-bronze {
+            color: #b8976a;
+        }
+
+        /* Subtle chessboard pattern */
+        .chess-pattern {
+            background-image: 
+                linear-gradient(45deg, #1e2937 25%, transparent 25%) -1px -1px,
+                linear-gradient(45deg, transparent 75%, #1e2937 75%),
+                linear-gradient(45deg, transparent 75%, #1e2937 75%),
+                linear-gradient(45deg, #1e2937 25%, transparent 25%);
+            background-size: 28px 28px;
+            background-position: 0 0, 0 0, 14px 14px, 14px 14px;
+            opacity: 0.55;
+        }
+
+        .chess-pattern-light {
+            background-image: 
+                linear-gradient(45deg, #334155 25%, transparent 25%) -1px -1px,
+                linear-gradient(45deg, transparent 75%, #334155 75%),
+                linear-gradient(45deg, transparent 75%, #334155 75%),
+                linear-gradient(45deg, #334155 25%, transparent 25%);
+            background-size: 22px 22px;
+            opacity: 0.35;
+        }
+
+        /* Elegant gold accents */
+        .gold-accent {
+            color: #d4af37;
+        }
+
+        .border-gold {
+            border-color: #d4af37;
+        }
+
+        .bg-gold {
+            background-color: #d4af37;
+        }
+
+        /* Card styles - premium feel */
+        .premium-card {
+            transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+            border: 1px solid #334155;
+        }
+        
+        .premium-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 20px 25px -5px rgb(0 0 0 / 0.1), 0 8px 10px -6px rgb(0 0 0 / 0.1);
+            border-color: #b8976a;
+        }
+
+        /* Benefit icons */
+        .benefit-icon {
+            transition: transform 0.3s ease;
+        }
+        
+        .premium-card:hover .benefit-icon {
+            transform: scale(1.08);
+        }
+
+        /* Interactive chessboard - premium look with large pieces + full notation */
+        .chess-board {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            width: 100%;
+            max-width: 290px;
+            aspect-ratio: 1 / 1;
+            border: 3px solid #5c4637;
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.4), 
+                       0 4px 6px -4px rgb(0 0 0 / 0.4),
+                       inset 0 1px 0 0 #d4c4a8;
+            border-radius: 3px;
+            overflow: hidden;
+            background: #5c4637;
+            position: relative;
+        }
+
+        .chess-square {
+            position: relative;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 0;
+            transition: background-color 0.15s ease;
+        }
+
+        .chess-square.light {
+            background-color: #e8dcc8;
+        }
+        
+        .chess-square.dark {
+            background-color: #6b5344;
+        }
+
+        .chess-square.highlight {
+            box-shadow: inset 0 0 0 3px #d4af37;
+            z-index: 2;
+        }
+
+        .chess-piece {
+            font-size: 30px;
+            line-height: 1;
+            transition: all 0.75s cubic-bezier(0.34, 1.56, 0.64, 1);
+            z-index: 10;
+            user-select: none;
+            position: absolute;
+            pointer-events: none;
+            text-align: center;
+            box-sizing: border-box;
+            /* Base centering when inside squares via flex */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .chess-piece.piece-white {
+            color: #f5f5f0;
+            text-shadow: 
+                0 2px 3px rgba(0, 0, 0, 0.9),
+                0 0 2px rgba(0, 0, 0, 0.6);
+            filter: drop-shadow(0 1px 2px rgba(0,0,0,0.4));
+        }
+
+        .chess-piece.piece-black {
+            color: #111827;
+            text-shadow: 
+                0 1px 2px rgba(255, 255, 255, 0.35);
+            -webkit-text-stroke: 0.4px #1f2937;
+        }
+
+        /* Chessboard labels (a-h and 1-8) */
+        .chessboard-wrapper {
+            max-width: 310px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        @media (max-width: 640px) {
+            .chessboard-wrapper {
+                max-width: 100%;
+            }
+        }
+
+        .chessboard-inner {
+            display: flex;
+            align-items: stretch;
+            gap: 3px;
+        }
+
+        .rank-labels {
+            display: grid;
+            grid-template-rows: repeat(8, 1fr);
+            height: 100%;
+            width: 20px;
+            font-size: 8px;
+            color: #b8976a;
+            font-weight: 500;
+            user-select: none;
+            align-items: center;
+            line-height: 1;
+        }
+
+        @media (min-width: 640px) {
+            .rank-labels {
+                font-size: 10px;
+            }
+        }
+
+        .rank-labels > div {
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+            padding-right: 3px;
+            height: 100%;
+        }
+
+        .chessboard-main {
+            flex: 1;
+            min-width: 0;
+        }
+
+        .file-labels {
+            display: grid;
+            grid-template-columns: repeat(8, 1fr);
+            font-size: 8px;
+            line-height: 1;
+            color: #b8976a;
+            font-weight: 500;
+            margin-top: 2px;
+            text-align: center;
+            letter-spacing: 0.2px;
+            user-select: none;
+            padding-left: 16px;
+        }
+
+        @media (min-width: 640px) {
+            .file-labels {
+                font-size: 10px;
+                letter-spacing: 0.3px;
+            }
+        }
+
+        /* === Elegant Diploma Carousel for Мои достижения === */
+        .diploma-carousel {
+            background-color: #020617;
+            border: 1px solid #334155;
+            border-radius: 12px;
+            padding: 8px;
+            max-width: 100%;
+        }
+
+        @media (min-width: 640px) {
+            .diploma-carousel {
+                padding: 12px;
+                max-width: 560px;
+            }
+        }
+
+        .diploma-main {
+            position: relative;
+            width: 100%;
+            aspect-ratio: 1.4 / 1;
+            background-color: #020617;
+            border-radius: 4px;
+            overflow: hidden;
+            border: 2px solid #d4af37;
+            box-shadow: 0 10px 30px -8px rgb(0 0 0 / 0.6);
+        }
+
+        .diploma-main img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            background-color: transparent;
+            transition: opacity 0.5s ease, transform 0.9s ease;
+        }
+
+        .diploma-main img.fade {
+            opacity: 0;
+            transform: scale(0.97);
+        }
+
+        .diploma-thumbs {
+            display: flex;
+            gap: 6px;
+            margin-top: 10px;
+            overflow-x: auto;
+            padding: 4px 2px 8px;
+            scrollbar-width: thin;
+        }
+
+        .diploma-thumbs img {
+            width: 40px;
+            height: 40px;
+            object-fit: cover;
+            border-radius: 4px;
+            border: 2px solid #334155;
+            cursor: pointer;
+            transition: all 0.2s ease;
+            flex-shrink: 0;
+            opacity: 0.85;
+        }
+
+        @media (min-width: 640px) {
+            .diploma-thumbs img {
+                width: 48px;
+                height: 48px;
+            }
+        }
+
+        .diploma-thumbs img:hover {
+            border-color: #d4af37;
+            opacity: 1;
+            transform: scale(1.08);
+        }
+
+        .diploma-thumbs img.active {
+            border-color: #d4af37;
+            opacity: 1;
+            box-shadow: 0 0 0 2px rgba(212, 175, 55, 0.25);
+        }
+
+        /* Navbar */
+        .nav-link {
+            position: relative;
+            transition: color 0.2s ease;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 1px;
+            bottom: -2px;
+            left: 0;
+            background-color: #d4af37;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after,
+        .nav-link.active:after {
+            width: 100%;
+        }
+
+        .nav-link.active {
+            color: #d4af37;
+        }
+
+        /* Quote block */
+        .quote-block {
+            border-left: 4px solid #d4af37;
+        }
+
+        /* Stats */
+        .stat-number {
+            font-variant-numeric: tabular-nums;
+        }
+
+        /* Form styling */
+        .form-input {
+            background-color: #0f172a;
+            border: 1px solid #475569;
+            color: #f8f1e3;
+            transition: all 0.2s ease;
+        }
+        
+        .form-input:focus {
+            border-color: #d4af37;
+            outline: none;
+            box-shadow: 0 0 0 3px rgba(212, 175, 55, 0.1);
+        }
+
+        .form-input::placeholder {
+            color: #64748b;
+        }
+
+        /* Modal */
+        .modal {
+            animation: modalEnter 0.2s ease forwards;
+        }
+
+        @keyframes modalEnter {
+            from {
+                opacity: 0;
+                transform: translateY(20px) scale(0.98);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Smooth scroll */
+        html {
+            scroll-behavior: smooth;
+        }
+
+        /* Subtle decorative chess pieces */
+        .chess-accent {
+            opacity: 0.08;
+            pointer-events: none;
+        }
+
+        /* Mobile menu */
+        .mobile-menu {
+            transition: all 0.3s ease;
+        }
+
+        /* Section dividers */
+        .section-divider {
+            height: 1px;
+            background: linear-gradient(to right, transparent, #475569, transparent);
+        }
+
+        /* Premium hover for buttons */
+        .btn-premium {
+            transition: all 0.2s cubic-bezier(0.4, 0.0, 0.2, 1);
+        }
+        
+        .btn-premium:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 10px 15px -3px rgb(0 0 0 / 0.3), 0 4px 6px -4px rgb(0 0 0 / 0.3);
+        }
+
+        .btn-gold {
+            background-color: #d4af37;
+            color: #020617;
+            font-weight: 600;
+        }
+        
+        .btn-gold:hover {
+            background-color: #b8976a;
+        }
+
+        .btn-outline-gold {
+            border: 1px solid #d4af37;
+            color: #d4af37;
+        }
+        
+        .btn-outline-gold:hover {
+            background-color: rgba(212, 175, 55, 0.08);
+            color: #f8f1e3;
+        }
+
+        /* Accessibility */
+        .focus-ring:focus-visible {
+            outline: 2px solid #d4af37;
+            outline-offset: 2px;
+        }
+    </style>
+</head>
+<body class="bg-premium text-warm body-elegant">
+    <!-- ========================================
+         СКРЫТЫЕ КОММЕНТАРИИ ДЛЯ КАСТОМИЗАЦИИ
+         ========================================
+         
+         ИНСТРУКЦИЯ ПО НАСТРОЙКЕ САЙТА:
+         
+         1. Фото: Главное фото Александра уже добавлено (images/alexander-eremin.avif).
+            Рекомендуется заменить отзывы (picsum в отзывах) на реальные фото родителей/учеников (квадратные 1:1).
+         
+         2. Контакты: Замените все ЗАМЕНИТЕ НА РЕАЛЬНЫЕ ДАННЫЕ
+            - Телефон
+            - Telegram
+            - Email
+            - Город
+         
+         3. Тексты: Адаптируйте биографию, достижения и цитаты под себя.
+         
+         4. Форма: Подключите реальную отправку (Formspree, Netlify Forms,
+            или Telegram Bot) вместо текущей имитации.
+         
+         5. SEO: Обновите meta description, og:image и URL.
+         
+         6. Изображения для фона: Можно добавить лёгкий фон с шахматной
+            тематикой или оставить минималистичным.
+    -->
+
+    <!-- ==================== NAVIGATION ==================== -->
+    <nav id="navbar" class="sticky top-0 z-50 bg-[#020617]/95 backdrop-blur-lg border-b border-slate-800">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="flex items-center justify-between h-20">
+                <!-- Logo -->
+                <a href="#hero" class="flex items-center gap-x-3 group">
+                    <!-- Stylized King / Knight SVG -->
+                    <div class="w-10 h-10 flex items-center justify-center">
+                        <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <!-- Elegant chess king / knight hybrid accent -->
+                            <path d="M20 6 L23 12 L28 11 L24 17 L31 20 L24 23 L28 29 L23 28 L20 34 L17 28 L12 29 L16 23 L9 20 L16 17 L12 11 L17 12 Z" fill="#d4af37"/>
+                            <circle cx="20" cy="20" r="4" fill="#020617"/>
+                            <path d="M15 36 L25 36" stroke="#b8976a" stroke-width="1.5" stroke-linecap="round"/>
+                        </svg>
+                    </div>
+                    <div>
+                        <div class="font-semibold tracking-[2px] text-lg text-cream">Е-2 — Е-4</div>
+                        <div class="text-[9px] text-bronze -mt-1 tracking-[1.5px]">Шахматный клуб</div>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center gap-x-9 text-sm">
+                    <a href="#about" class="nav-link text-sm font-medium text-cream hover:text-gold">Обо мне</a>
+                    <a href="#club" class="nav-link text-sm font-medium text-cream hover:text-gold">Клуб</a>
+                    <a href="#doop" class="nav-link text-sm font-medium text-cream hover:text-gold">ДООП</a>
+                    <a href="#benefits" class="nav-link text-sm font-medium text-cream hover:text-gold">Обучение</a>
+                    <a href="#results" class="nav-link text-sm font-medium text-cream hover:text-gold">Достижения</a>
+                    <a href="#contacts" class="nav-link text-sm font-medium text-cream hover:text-gold">Контакты</a>
+                </div>
+
+                <!-- Mobile hamburger -->
+                <button id="mobile-menu-btn" 
+                        class="md:hidden w-10 h-10 flex items-center justify-center text-cream hover:text-gold transition-colors focus-ring"
+                        aria-label="Открыть меню">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                    </svg>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div id="mobile-menu" class="hidden md:hidden bg-[#020617] border-t border-slate-800 mobile-menu">
+            <div class="px-6 py-6 flex flex-col gap-y-4 text-sm">
+                <a href="#about" class="mobile-nav-link block py-2 text-cream hover:text-gold">Обо мне</a>
+                <a href="#club" class="mobile-nav-link block py-2 text-cream hover:text-gold">Клуб</a>
+                <a href="#doop" class="mobile-nav-link block py-2 text-cream hover:text-gold">ДООП</a>
+                <a href="#benefits" class="mobile-nav-link block py-2 text-cream hover:text-gold">Обучение</a>
+                <a href="#results" class="mobile-nav-link block py-2 text-cream hover:text-gold">Достижения</a>
+                <a href="#contacts" class="mobile-nav-link block py-2 text-cream hover:text-gold">Контакты</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ==================== HERO ==================== -->
+    <header id="hero" class="relative min-h-[100dvh] flex items-center pt-8 pb-12 border-b border-slate-800">
+        <!-- Background with subtle chess pattern -->
+        <div class="absolute inset-0 bg-[#020617]"></div>
+        <div class="absolute inset-0 chess-pattern"></div>
+        
+        <!-- Very subtle overlay gradient -->
+        <div class="absolute inset-0 bg-gradient-to-b from-[#020617]/70 via-[#020617]/30 to-[#020617]/90"></div>
+
+        <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-10">
+            <div class="grid md:grid-cols-12 gap-x-8 lg:gap-x-16 items-center">
+                
+                <!-- Hero text content -->
+                <div class="md:col-span-7 lg:col-span-7 max-w-2xl text-left">
+                    <div class="flex items-center gap-x-3 mb-5">
+                        <div class="h-px w-8 bg-gold"></div>
+                    </div>
+                    
+                    <h1 class="heading-serif text-5xl sm:text-6xl lg:text-7xl leading-[1.05] tracking-tighter text-cream mb-3">
+                        Еремин<br>Александр<br>Алексеевич
+                    </h1>
+                    
+                    <p class="text-lg sm:text-xl lg:text-2xl text-bronze font-medium mb-6 tracking-tight">
+                        Педагог дополнительного образования<br>
+                        Руководитель шахматного клуба «Е-2 — Е-4»
+                    </p>
+                    
+                    <p class="max-w-lg text-base sm:text-lg text-[#d1c7b5] mb-8 leading-relaxed">
+                        Шахматы развивают мышление, характер и уверенность в себе.<br>
+                        Я помогаю детям и взрослым обрести силу мысли.
+                    </p>
+                    
+                    <!-- Hero CTAs -->
+                    <div class="flex justify-start">
+                        <a href="#benefits" 
+                           class="inline-flex items-center justify-center px-6 sm:px-8 py-3 rounded-full text-sm sm:text-base font-medium btn-outline-gold border-2 focus-ring">
+                            Узнать о пользе шахмат
+                        </a>
+                    </div>
+                    
+                    <div class="mt-8 flex items-center gap-x-5 text-sm text-[#a8a090]">
+                        <div class="flex items-center">
+                            <svg class="w-4 h-4 mr-1.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 01-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                            </svg>
+                            <span>Более 500 учеников</span>
+                        </div>
+                        <div class="h-1 w-1 rounded-full bg-slate-600"></div>
+                        <span>Златоуст</span>
+                    </div>
+                </div>
+
+                <!-- Interactive chessboard -->
+                <div class="md:col-span-5 lg:col-span-5 mt-8 md:mt-0 flex flex-col items-center md:items-end">
+                    <div class="w-full max-w-[220px] sm:max-w-[260px] md:max-w-[310px]">
+                        <div class="mb-4">
+                            <div>
+                                <div class="text-sm font-medium tracking-widest text-bronze">КЛАССИЧЕСКИЙ ДЕБЮТ</div>
+                                <div class="text-xl text-cream font-semibold">e2 — e4</div>
+                            </div>
+                        </div>
+
+                        <!-- The mini chessboard with full notation -->
+                        <div class="chessboard-wrapper">
+                          <div class="chessboard-inner">
+                            <!-- Rank numbers 8 → 1 (left side) -->
+                            <div class="rank-labels">
+                              <div>8</div>
+                              <div>7</div>
+                              <div>6</div>
+                              <div>5</div>
+                              <div>4</div>
+                              <div>3</div>
+                              <div>2</div>
+                              <div>1</div>
+                            </div>
+
+                            <div class="chessboard-main">
+                              <div id="chessboard" 
+                                   class="chess-board cursor-pointer"
+                                   aria-label="Интерактивная шахматная доска. Нажмите, чтобы увидеть анимацию хода e2-e4">
+                                <!-- Squares and pieces are generated by JS -->
+                              </div>
+
+                              <!-- File letters a → h (bottom) -->
+                              <div class="file-labels">
+                                <div>a</div><div>b</div><div>c</div><div>d</div><div>e</div><div>f</div><div>g</div><div>h</div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div class="mt-3 text-center">
+                            <p class="text-xs text-[#a8a090]">Нажмите на доску — классический дебют e2-e4</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Subtle scroll indicator -->
+        <div class="absolute bottom-8 left-1/2 hidden lg:block">
+            <a href="#about" class="flex flex-col items-center text-xs tracking-widest text-bronze/60 hover:text-bronze transition-colors">
+                <span class="mb-1">ПРОКРУТИТЕ</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.75" d="M19 14l-7 7m0 0l-7-7m7 7V3" />
+                </svg>
+            </a>
+        </div>
+    </header>
+
+    <!-- ==================== ОБО МНЕ ==================== -->
+    <section id="about" class="max-w-7xl mx-auto px-4 sm:px-6 pt-16 pb-12 sm:pt-20 sm:pb-16">
+        <div class="grid lg:grid-cols-12 gap-x-14 gap-y-12 items-start">
+            
+            <!-- Photo -->
+            <div class="lg:col-span-5">
+                <div class="relative">
+                    <!-- Реальное фото Александра Еремина -->
+                    <picture>
+                        <source srcset="images/alexander-eremin.avif" type="image/avif">
+                        <img src="images/alexander-eremin.jpg" 
+                             alt="Еремин Александр Алексеевич — педагог дополнительного образования и руководитель шахматного клуба «Е-2 — Е-4»"
+                             class="w-full aspect-[3/4] object-cover rounded-2xl shadow-2xl border border-slate-700">
+                    </picture>
+                    
+                    <!-- Subtle chess accent decoration -->
+                    <div class="absolute -bottom-3 -right-3 w-20 h-20 border-[14px] border-[#020617] rounded-2xl">
+                        <div class="w-full h-full bg-[#0f172a] rounded-xl flex items-center justify-center">
+                            <svg width="34" height="34" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 8 L24 14 L30 13 L25 20 L32 23 L25 26 L30 32 L24 31 L20 38 L16 31 L10 32 L15 26 L8 23 L15 20 L10 13 L16 14 Z" fill="#d4af37" opacity="0.9"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bio -->
+            <div class="lg:col-span-7">
+                <div class="uppercase tracking-[2.5px] text-xs font-medium text-bronze mb-3">15+ ЛЕТ ОПЫТА</div>
+                
+                <h2 class="heading-serif text-5xl lg:text-5xl tracking-[-1.5px] text-cream mb-6 leading-none">Обо мне</h2>
+                
+                <div class="prose prose-invert max-w-none text-[15.5px] leading-relaxed text-[#d1c7b5] space-y-5">
+                    <p>Меня зовут Александр Еремин. Я педагог дополнительного образования и уже более пятнадцати лет посвящаю себя преподаванию шахмат.</p>
+                    
+                    <p>За эти годы я работал с детьми от 5 до 17 лет. Мои ученики регулярно занимают призовые места на городских, региональных и всероссийских турнирах. Но главное — они учатся думать ясно, принимать решения в условиях неопределённости и сохранять спокойствие под давлением.</p>
+                    
+                    <p>Я верю, что шахматы — один из самых мощных инструментов развития личности. Они учат ответственности, дисциплине и уважению к противнику. Эти качества остаются с человеком на всю жизнь.</p>
+                </div>
+                
+                <!-- Quote -->
+                <div class="quote-block mt-9 pl-7 py-1">
+                    <blockquote class="text-xl leading-tight tracking-tight text-cream">
+                        «Шахматы учат не только выигрывать. Они учат достойно проигрывать и находить правильные ходы в жизни.»
+                    </blockquote>
+                    <div class="mt-3 text-sm text-bronze">— Александр Еремин</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-7xl mx-auto"></div>
+
+    <!-- ==================== ШАХМАТНЫЙ КЛУБ ==================== -->
+    <section id="club" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div class="max-w-3xl mb-11">
+            <div class="uppercase text-xs tracking-[3px] text-bronze mb-2">С 2021 ГОДА</div>
+            <h2 class="heading-serif text-5xl tracking-[-1.5px] text-cream mb-5">Шахматный клуб «Е-2 — Е-4»</h2>
+            <p class="text-xl text-[#d1c7b5]">
+                Название клуба — это первый ход белых фигур в большинстве партий. 
+                e2-e4 символизирует начало, смелую инициативу и стремление к активной игре.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-5">
+            
+            <!-- Feature cards -->
+            <div class="premium-card bg-navy rounded-2xl p-5 sm:p-7 group">
+                <div class="w-9 h-9 rounded-full bg-[#1e2937] flex items-center justify-center mb-6 text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 01-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-xl tracking-tight mb-3">Возрастные группы</h3>
+                <p class="text-[#b9b1a3] text-[14.5px]">Дети от 5 до 17 лет. Занятия полностью адаптированы под возраст и уровень подготовки.</p>
+            </div>
+
+            <div class="premium-card bg-navy rounded-2xl p-5 sm:p-7 group">
+                <div class="w-9 h-9 rounded-full bg-[#1e2937] flex items-center justify-center mb-6 text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 01-2 2m-6 0a2 2 0 01-2-2" />
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-xl tracking-tight mb-3">Форматы занятий</h3>
+                <p class="text-[#b9b1a3] text-[14.5px]">Индивидуальные уроки, малые группы (3–6 человек) и большие группы. Гибкий график, удобное время для школьников и родителей.</p>
+            </div>
+
+            <div class="premium-card bg-navy rounded-2xl p-5 sm:p-7 group">
+                <div class="w-9 h-9 rounded-full bg-[#1e2937] flex items-center justify-center mb-6 text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z" />
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-xl tracking-tight mb-3">Подготовка к турнирам</h3>
+                <p class="text-[#b9b1a3] text-[14.5px]">Полноценная турнирная подготовка: разбор партий, дебютная теория, эндшпиль и психология соревнований. Регулярные внутренние турниры клуба.</p>
+            </div>
+
+            <div class="premium-card bg-navy rounded-2xl p-5 sm:p-7 group">
+                <div class="w-9 h-9 rounded-full bg-[#1e2937] flex items-center justify-center mb-6 text-gold">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3.055 11H5a2 2 0 012 2v1a2 2 0 002 2 2 2 0 012 2v2.945M8 3.935V5.5A2.5 2.5 0 0010.5 8h.5a2 2 0 012 2 2 2 0 104 0 2 2 0 012-2h.5A2.5 2.5 0 0020 5.5v-1.565" />
+                    </svg>
+                </div>
+                <h3 class="font-semibold text-xl tracking-tight mb-3">Очные занятия</h3>
+                <p class="text-[#b9b1a3] text-[14.5px]">Занятия проводятся только очно в Златоусте. Полноценная работа с доской и анализом партий в индивидуальном и групповом формате.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="section-divider max-w-7xl mx-auto"></div>
+
+    <!-- ==================== ДООП ==================== -->
+    <section id="doop" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div class="max-w-3xl mb-8">
+            <div class="uppercase text-xs tracking-[3px] text-bronze mb-2">ПРОГРАММЫ</div>
+            <h2 class="heading-serif text-5xl tracking-[-1.5px] text-cream mb-4">ДООП и результаты их освоения</h2>
+            <p class="text-lg text-[#d1c7b5]">
+                Дополнительные общеразвивающие образовательные программы по шахматам. 
+                Ознакомьтесь с программами и результатами их освоения.
+            </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <a href="programs/Шахматы_программа.pdf" target="_blank" 
+               class="premium-card bg-navy rounded-2xl p-6 group flex flex-col hover:border-gold transition-all">
+                <div class="text-4xl mb-4 text-gold">📄</div>
+                <h3 class="font-semibold text-xl mb-2">Шахматы</h3>
+                <p class="text-sm text-[#b9b1a3] flex-1">Общая программа дополнительного образования</p>
+                <div class="mt-4 text-gold text-sm font-medium group-hover:underline">Открыть PDF →</div>
+            </a>
+
+            <a href="programs/Шахматы_для_дошкольников.pdf" target="_blank" 
+               class="premium-card bg-navy rounded-2xl p-6 group flex flex-col hover:border-gold transition-all">
+                <div class="text-4xl mb-4 text-gold">📄</div>
+                <h3 class="font-semibold text-xl mb-2">Шахматы для дошкольников</h3>
+                <p class="text-sm text-[#b9b1a3] flex-1">Программа для детей от 5 до 7 лет</p>
+                <div class="mt-4 text-gold text-sm font-medium group-hover:underline">Открыть PDF →</div>
+            </a>
+
+            <a href="programs/Шахматы_для_школьников.pdf" target="_blank" 
+               class="premium-card bg-navy rounded-2xl p-6 group flex flex-col hover:border-gold transition-all">
+                <div class="text-4xl mb-4 text-gold">📄</div>
+                <h3 class="font-semibold text-xl mb-2">Шахматы для школьников</h3>
+                <p class="text-sm text-[#b9b1a3] flex-1">Программа для детей от 7 до 17 лет</p>
+                <div class="mt-4 text-gold text-sm font-medium group-hover:underline">Открыть PDF →</div>
+            </a>
+        </div>
+    </section>
+    <section id="benefits" class="bg-[#0a101f] py-12 sm:py-16">
+        <div class="max-w-7xl mx-auto px-6">
+            <div class="max-w-2xl mb-10">
+                <div class="text-bronze text-xs tracking-[3px] mb-3">ПОЧЕМУ РОДИТЕЛИ ВЫБИРАЮТ НАС</div>
+                <h2 class="heading-serif text-5xl tracking-[-1.5px] text-cream">Что дают занятия шахматами</h2>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                
+                <!-- Benefit 1 -->
+                <div class="premium-card bg-navy rounded-2xl p-5 sm:p-8 flex gap-5">
+                    <div class="benefit-icon flex-shrink-0 w-11 h-11 mt-0.5 text-gold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M9.663 17.25l.602-3.015M9.663 17.25l-.602-3.015M9.663 17.25l.602 3.015M9.663 17.25l-.602 3.015M13.5 3.75l-.75 4.5M13.5 3.75l.75 4.5M13.5 3.75L18 8.25M13.5 3.75L9 8.25M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9a9 9 0 01-9-9m9 9c1.657 0 3-4.03 3-9s-1.343-9-3-9m0 18c-1.657 0-3-4.03-3-9s1.343-9 3-9m-9 9a9 9 0 019-9" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 tracking-tight">Логическое мышление</h3>
+                        <p class="text-[#b9b1a3] text-[14.5px]">Умение выстраивать длинные цепочки рассуждений и находить оптимальные решения в сложных ситуациях.</p>
+                    </div>
+                </div>
+
+                <div class="premium-card bg-navy rounded-2xl p-5 sm:p-8 flex gap-5">
+                    <div class="benefit-icon flex-shrink-0 w-11 h-11 mt-0.5 text-gold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z" />
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M2.458 12C3.732 7.943 7.523 5 12 5c4.478 0 8.268 2.943 9.542 7-1.274 4.057-5.064 7-9.542 7-4.477 0-8.268-2.943-9.542-7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 tracking-tight">Концентрация внимания</h3>
+                        <p class="text-[#b9b1a3] text-[14.5px]">Умение сохранять глубокое внимание в течение длительного времени — одно из главных преимуществ шахматистов.</p>
+                    </div>
+                </div>
+
+                <div class="premium-card bg-navy rounded-2xl p-5 sm:p-8 flex gap-5">
+                    <div class="benefit-icon flex-shrink-0 w-11 h-11 mt-0.5 text-gold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 tracking-tight">Эмоциональный контроль</h3>
+                        <p class="text-[#b9b1a3] text-[14.5px]">Способность сохранять спокойствие в стрессовых ситуациях и контролировать свои эмоции в любых обстоятельствах.</p>
+                    </div>
+                </div>
+
+                <div class="premium-card bg-navy rounded-2xl p-5 sm:p-8 flex gap-5">
+                    <div class="benefit-icon flex-shrink-0 w-11 h-11 mt-0.5 text-gold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 tracking-tight">Успеваемость в школе</h3>
+                        <p class="text-[#b9b1a3] text-[14.5px]">Шахматы заметно улучшают результаты по математике, физике, информатике и другим предметам, требующим мышления.</p>
+                    </div>
+                </div>
+
+                <div class="premium-card bg-navy rounded-2xl p-5 sm:p-8 flex gap-5">
+                    <div class="benefit-icon flex-shrink-0 w-11 h-11 mt-0.5 text-gold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M3 6l3 1m0 0l-3 9a5.002 5.002 0 006.001 0M6 7l3 9M6 7l6-2m6 2l3-1m-3 1l-3 9a5.002 5.002 0 006.001 0M18 7l3 9m-3-9V9" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 tracking-tight">Стратегическое мышление</h3>
+                        <p class="text-[#b9b1a3] text-[14.5px]">Умение смотреть на несколько ходов вперёд, просчитывать последствия и планировать долгосрочные действия.</p>
+                    </div>
+                </div>
+
+                <div class="premium-card bg-navy rounded-2xl p-5 sm:p-8 flex gap-5">
+                    <div class="benefit-icon flex-shrink-0 w-11 h-11 mt-0.5 text-gold">
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.6" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
+                        </svg>
+                    </div>
+                    <div>
+                        <h3 class="font-semibold text-lg mb-2 tracking-tight">Уверенность в себе</h3>
+                        <p class="text-[#b9b1a3] text-[14.5px]">Победа над собой и над доской укрепляет самооценку и формирует здоровое отношение к успеху и неудаче.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== РЕЗУЛЬТАТЫ И ОТЗЫВЫ ==================== -->
+    <section id="results" class="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-16">
+        <div class="max-w-3xl mb-10">
+            <div class="uppercase text-xs tracking-[3px] text-bronze mb-2">РЕАЛЬНЫЕ РЕЗУЛЬТАТЫ</div>
+            <h2 class="heading-serif text-5xl tracking-[-1.5px] text-cream">Достижения</h2>
+        </div>
+
+        <!-- Stats -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-px bg-slate-800 rounded-2xl overflow-hidden mb-12">
+            <div class="bg-navy p-7 text-center">
+                <div class="text-4xl font-semibold tracking-tight text-gold stat-number">500+</div>
+                <div class="mt-1 text-sm text-[#a8a090]">Учеников клуба</div>
+            </div>
+            <div class="bg-navy p-7 text-center">
+                <div class="text-4xl font-semibold tracking-tight text-gold stat-number">150+</div>
+                <div class="mt-1 text-sm text-[#a8a090]">Призовых мест на турнирах</div>
+            </div>
+            <div class="bg-navy p-7 text-center">
+                <div class="text-4xl font-semibold tracking-tight text-gold stat-number">15</div>
+                <div class="mt-1 text-sm text-[#a8a090]">Лет педагогического опыта</div>
+            </div>
+            <div class="bg-navy p-7 text-center">
+                <div class="text-4xl font-semibold tracking-tight text-gold stat-number">95%</div>
+                <div class="mt-1 text-sm text-[#a8a090]">Учеников отмечают рост успеваемости</div>
+            </div>
+        </div>
+
+        <!-- Split Achievements -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-6">
+            <div>
+                <h3 class="text-2xl font-semibold tracking-tight mb-4">Мои достижения</h3>
+                
+                <!-- Animated Certificates Carousel -->
+                <div class="diploma-carousel">
+                    <div class="diploma-main" id="diploma-main">
+                        <img id="diploma-display" 
+                             src="images/diploma-dynamo.jpg" 
+                             alt="Грамота">
+                    </div>
+                    
+                    <div class="diploma-thumbs" id="diploma-thumbs">
+                        <!-- Thumbnails will be populated by JS -->
+                    </div>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-2xl font-semibold tracking-tight mb-4">Достижения моих учеников</h3>
+                
+                <!-- Animated Certificates Carousel for students -->
+                <div class="diploma-carousel">
+                    <div class="diploma-main" id="diploma-students-main">
+                        <img id="diploma-students-display" 
+                             src="images/diploma-5.png" 
+                             alt="Грамота">
+                    </div>
+                    
+                    <div class="diploma-thumbs" id="diploma-students-thumbs">
+                        <!-- populated by JS -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- ==================== CONTACTS + FOOTER ==================== -->
+    <footer id="contacts" class="bg-[#020617] border-t border-slate-800">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-10 pb-6 sm:pt-14 sm:pb-9">
+            
+            <div class="grid md:grid-cols-12 gap-y-12">
+                <!-- Contact info -->
+                <div class="md:col-span-5">
+                    <div class="flex items-center gap-x-3 mb-8">
+                        <div class="w-9 h-9 flex items-center justify-center">
+                            <svg width="36" height="36" viewBox="0 0 40 40" fill="none">
+                                <path d="M20 6 L23 12 L28 11 L24 17 L31 20 L24 23 L28 29 L23 28 L20 34 L17 28 L12 29 L16 23 L9 20 L16 17 L12 11 L17 12 Z" fill="#d4af37"/>
+                                <circle cx="20" cy="20" r="3.5" fill="#020617"/>
+                            </svg>
+                        </div>
+                        <div>
+                            <div class="font-semibold tracking-[1.5px] text-xl text-cream">Е-2 — Е-4</div>
+                            <div class="text-xs text-bronze -mt-0.5">ШАХМАТНЫЙ КЛУБ</div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-[17px] text-[15px]">
+                        <a href="mailto:alexander@e2e4-chess.ru" class="flex items-center gap-x-3 group">
+                            <span class="text-bronze w-4">✉︎</span> 
+                            <span class="group-hover:text-gold transition-colors">alexander@e2e4-chess.ru</span>
+                        </a>
+                        
+                        <div class="flex items-center gap-x-3 pt-1">
+                            <span class="text-bronze w-4">⌂</span> 
+                            <span>г. Златоуст</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="md:col-span-7">
+                    <div class="md:text-right">
+                        <p class="text-xl leading-tight max-w-lg md:ml-auto text-[#d1c7b5]">
+                            Шахматы — это не спорт.<br>
+                            Это искусство мыслить ясно и действовать уверенно.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer bottom -->
+            <div class="mt-16 pt-7 border-t border-slate-800 flex flex-col sm:flex-row sm:items-center justify-between gap-y-4 text-xs text-[#827a6d]">
+                <div>© 2026 Еремин Александр Алексеевич. Все права защищены.</div>
+                <div>
+                    <span>Сделано с уважением к шахматам</span>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Tailwind script configuration
+        function initializeTailwind() {
+            document.documentElement.style.setProperty('--accent-gold', '#d4af37');
+            
+            tailwind.config = {
+                theme: {
+                    extend: {
+                        colors: {
+                            'gold': '#d4af37',
+                            'bronze': '#b8976a',
+                            'cream': '#f5f5f0',
+                            'warm': '#f8f1e3'
+                        }
+                    }
+                }
+            };
+        }
+
+        // Initialize interactive chessboard with starting position + e2-e4
+        function initChessboard() {
+            const board = document.getElementById('chessboard');
+            if (!board) return;
+
+            board.innerHTML = '';
+
+            // Create clean 8x8 grid
+            for (let rank = 8; rank >= 1; rank--) {
+                for (let fileIndex = 0; fileIndex < 8; fileIndex++) {
+                    const square = document.createElement('div');
+                    square.className = `chess-square ${(fileIndex + rank) % 2 === 0 ? 'dark' : 'light'}`;
+                    board.appendChild(square);
+                }
+            }
+
+            // Create a piece with correct color class and LARGE size
+            function createPiece(symbol, isWhite) {
+                const p = document.createElement('div');
+                p.className = `chess-piece ${isWhite ? 'piece-white' : 'piece-black'}`;
+                // Large pieces — nearly filling the square
+                p.style.fontSize = (symbol === '♙' || symbol === '♟') ? '32px' : '29px';
+                p.style.transition = 'all 0.75s cubic-bezier(0.34, 1.56, 0.64, 1)';
+                p.textContent = symbol;
+                return p;
+            }
+
+            // Perfect centering: attach piece directly to its square and use flex
+            function attachPieceToSquare(piece, fileIndex, rankFromBottom) {
+                const rowFromTop = 7 - rankFromBottom;
+                const index = rowFromTop * 8 + fileIndex;
+                const square = board.children[index];
+                if (!square) return;
+
+                piece.style.position = 'absolute';
+                piece.style.left = '0';
+                piece.style.top = '0';
+                piece.style.width = '100%';
+                piece.style.height = '100%';
+                piece.style.display = 'flex';
+                piece.style.alignItems = 'center';
+                piece.style.justifyContent = 'center';
+                piece.style.transform = 'none';
+                // Fine vertical nudge for Unicode chess glyphs (common issue)
+                piece.style.paddingBottom = '1px';
+
+                square.appendChild(piece);
+            }
+
+            // === Rich starting position with BIG, properly colored pieces ===
+
+            // The animated white pawn on e2 (biggest)
+            const movingPawn = createPiece('♙', true);
+            movingPawn.id = 'pawn-piece';
+            movingPawn.style.zIndex = '25';
+            attachPieceToSquare(movingPawn, 4, 1); // e2
+
+            // White pieces
+            attachPieceToSquare(createPiece('♔', true), 4, 0); // Ke1
+            attachPieceToSquare(createPiece('♕', true), 3, 0); // Qd1
+            attachPieceToSquare(createPiece('♖', true), 0, 0); // Ra1
+            attachPieceToSquare(createPiece('♖', true), 7, 0); // Rh1
+            attachPieceToSquare(createPiece('♘', true), 1, 0); // Nb1
+            attachPieceToSquare(createPiece('♘', true), 6, 0); // Ng1
+            attachPieceToSquare(createPiece('♗', true), 2, 0); // Bc1
+            attachPieceToSquare(createPiece('♗', true), 5, 0); // Bf1
+
+            // White pawns rank 2
+            attachPieceToSquare(createPiece('♙', true), 0, 1);
+            attachPieceToSquare(createPiece('♙', true), 1, 1);
+            attachPieceToSquare(createPiece('♙', true), 2, 1);
+            attachPieceToSquare(createPiece('♙', true), 3, 1);
+            attachPieceToSquare(createPiece('♙', true), 5, 1);
+            attachPieceToSquare(createPiece('♙', true), 6, 1);
+            attachPieceToSquare(createPiece('♙', true), 7, 1);
+
+            // Black pieces
+            attachPieceToSquare(createPiece('♚', false), 4, 7); // Ke8
+            attachPieceToSquare(createPiece('♛', false), 3, 7); // Qd8
+            attachPieceToSquare(createPiece('♜', false), 0, 7); // Ra8
+            attachPieceToSquare(createPiece('♜', false), 7, 7); // Rh8
+            attachPieceToSquare(createPiece('♞', false), 1, 7); // Nb8
+            attachPieceToSquare(createPiece('♞', false), 6, 7); // Ng8
+            attachPieceToSquare(createPiece('♝', false), 2, 7); // Bc8
+            attachPieceToSquare(createPiece('♝', false), 5, 7); // Bf8
+
+            // Black pawns rank 7 (all 8, including e7)
+            attachPieceToSquare(createPiece('♟', false), 0, 6); // a7
+            attachPieceToSquare(createPiece('♟', false), 1, 6); // b7
+            attachPieceToSquare(createPiece('♟', false), 2, 6); // c7
+            attachPieceToSquare(createPiece('♟', false), 3, 6); // d7
+            attachPieceToSquare(createPiece('♟', false), 4, 6); // e7
+            attachPieceToSquare(createPiece('♟', false), 5, 6); // f7
+            attachPieceToSquare(createPiece('♟', false), 6, 6); // g7
+            attachPieceToSquare(createPiece('♟', false), 7, 6); // h7
+
+            // Store reference
+            board.dataset.initialized = 'true';
+        }
+
+        // Helper to get absolute center of a square (used only during animation)
+        function getSquareCenter(board, fileIndex, rankFromBottom) {
+            const rect = board.getBoundingClientRect();
+            const size = rect.width / 8;
+            const x = fileIndex * size + size / 2;
+            const y = (7 - rankFromBottom) * size + size / 2;
+            return { x, y };
+        }
+
+        // Temporarily lift the pawn out of its square and position it absolutely on the board for smooth animation
+        function liftPawnToBoard(pawn, board, fileIndex, rankFromBottom) {
+            if (pawn.parentElement && pawn.parentElement !== board) {
+                pawn.parentElement.removeChild(pawn);
+            }
+            const center = getSquareCenter(board, fileIndex, rankFromBottom);
+
+            pawn.style.position = 'absolute';
+            pawn.style.left = `${center.x}px`;
+            pawn.style.top = `${center.y}px`;
+            pawn.style.width = 'auto';
+            pawn.style.height = 'auto';
+            pawn.style.display = 'block';
+            pawn.style.transform = 'translate(-50%, -50%)';
+            pawn.style.paddingBottom = '0';
+            pawn.style.zIndex = '30';
+
+            board.appendChild(pawn);
+        }
+
+        // Re-attach the pawn to its target square with perfect flex centering
+        function attachPawnToSquare(pawn, fileIndex, rankFromBottom) {
+            const board = pawn.parentElement;
+            if (!board) return;
+
+            const rowFromTop = 7 - rankFromBottom;
+            const index = rowFromTop * 8 + fileIndex;
+            const square = board.children[index];
+            if (!square) return;
+
+            if (pawn.parentElement) {
+                pawn.parentElement.removeChild(pawn);
+            }
+
+            pawn.style.position = 'absolute';
+            pawn.style.left = '0';
+            pawn.style.top = '0';
+            pawn.style.width = '100%';
+            pawn.style.height = '100%';
+            pawn.style.display = 'flex';
+            pawn.style.alignItems = 'center';
+            pawn.style.justifyContent = 'center';
+            pawn.style.transform = 'none';
+            pawn.style.paddingBottom = '1px';
+            pawn.style.zIndex = '25';
+
+            square.appendChild(pawn);
+        }
+
+        // Play e2-e4 animation
+        let isAnimating = false;
+
+        function playE2E4() {
+            const board = document.getElementById('chessboard');
+            const pawn = document.getElementById('pawn-piece');
+            
+            if (!board || !pawn || isAnimating) return;
+
+            isAnimating = true;
+
+            const squares = Array.from(board.children).filter(el => el.classList.contains('chess-square'));
+            const e2Index = (8 - 2) * 8 + 4;
+            const e4Index = (8 - 4) * 8 + 4;
+
+            squares.forEach(s => s.classList.remove('highlight'));
+            if (squares[e2Index]) squares[e2Index].classList.add('highlight');
+            if (squares[e4Index]) squares[e4Index].classList.add('highlight');
+
+            const startSquare = squares[e2Index];
+            const endSquare = squares[e4Index];
+
+            // Get precise centers directly from square elements (guarantees straight line)
+            const boardRect = board.getBoundingClientRect();
+            const startRect = startSquare.getBoundingClientRect();
+            const endRect = endSquare.getBoundingClientRect();
+
+            const startX = startRect.left - boardRect.left + startRect.width / 2;
+            const startY = startRect.top - boardRect.top + startRect.height / 2;
+            const endY = endRect.top - boardRect.top + endRect.height / 2;
+
+            // Remove pawn from square if attached
+            if (pawn.parentElement && pawn.parentElement !== board) {
+                pawn.parentElement.removeChild(pawn);
+            }
+
+            // Position exactly at center of e2, no transition yet
+            pawn.style.position = 'absolute';
+            pawn.style.left = `${startX}px`;
+            pawn.style.top = `${startY}px`;
+            pawn.style.width = 'auto';
+            pawn.style.height = 'auto';
+            pawn.style.display = 'block';
+            pawn.style.transform = 'translate(-50%, -50%)';
+            pawn.style.transition = 'none';
+            pawn.style.zIndex = '30';
+
+            board.appendChild(pawn);
+
+            // Force layout
+            void pawn.offsetWidth;
+
+            // Animate ONLY vertical position — straight line to exact center of e4
+            pawn.style.transition = 'top 850ms cubic-bezier(0.25, 0.1, 0.25, 1)';
+            pawn.style.top = `${endY}px`;
+
+            // 3. Elegant arrival + re-attach to e4 center
+            setTimeout(() => {
+                if (!pawn) return;
+
+                pawn.style.transition = 'transform 260ms cubic-bezier(0.34, 1.56, 0.64, 1)';
+                pawn.style.transform = 'translate(-50%, -50%) scale(1.05)';
+
+                setTimeout(() => {
+                    if (pawn) pawn.style.transform = 'translate(-50%, -50%) scale(1)';
+
+                    setTimeout(() => {
+                        attachPawnToSquare(pawn, 4, 3);  // e4 center (file 4, rank 4 from bottom = 3)
+                        squares.forEach(s => s.classList.remove('highlight'));
+                        isAnimating = false;
+                    }, 140);
+                }, 100);
+            }, 900);
+        }
+
+        // Interactions
+        function setupChessboardInteractions() {
+            const board = document.getElementById('chessboard');
+            if (!board) return;
+
+            // Click on board triggers the animation
+            board.addEventListener('click', () => {
+                playE2E4();
+            });
+
+            // Double click resets the pawn to e2 with perfect square centering
+            board.addEventListener('dblclick', (e) => {
+                const pawn = document.getElementById('pawn-piece');
+                if (!pawn || isAnimating) return;
+
+                attachPawnToSquare(pawn, 4, 1);
+            });
+
+            // Keyboard accessibility
+            board.setAttribute('tabindex', '0');
+            board.setAttribute('role', 'button');
+            board.setAttribute('aria-label', 'Нажмите, чтобы показать классический ход e2-e4');
+
+            board.addEventListener('keydown', function(e) {
+                if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    playE2E4();
+                }
+            });
+        }
+
+        // Mobile menu
+        function initMobileMenu() {
+            const btn = document.getElementById('mobile-menu-btn');
+            const menu = document.getElementById('mobile-menu');
+            
+            if (!btn || !menu) return;
+
+            btn.addEventListener('click', () => {
+                menu.classList.toggle('hidden');
+                
+                const icon = btn.querySelector('svg');
+                if (icon) {
+                    if (menu.classList.contains('hidden')) {
+                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+                    } else {
+                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />';
+                    }
+                }
+            });
+
+            // Close mobile menu on link click
+            const links = menu.querySelectorAll('a');
+            links.forEach(link => {
+                link.addEventListener('click', () => {
+                    menu.classList.add('hidden');
+                    const icon = btn.querySelector('svg');
+                    if (icon) {
+                        icon.innerHTML = '<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />';
+                    }
+                });
+            });
+        }
+
+        // Smooth scroll and active navigation
+        function initNavigation() {
+            const navLinks = document.querySelectorAll('a[href^="#"]');
+            const navbar = document.getElementById('navbar');
+            const sections = ['about', 'club', 'benefits', 'results', 'contacts'].map(id => document.getElementById(id));
+            
+            // Smooth scroll
+            navLinks.forEach(link => {
+                link.addEventListener('click', function(e) {
+                    const href = this.getAttribute('href');
+                    if (!href || !href.startsWith('#')) return;
+                    
+                    const target = document.querySelector(href);
+                    if (target) {
+                        e.preventDefault();
+                        
+                        const navHeight = navbar ? navbar.offsetHeight : 80;
+                        const targetPosition = target.getBoundingClientRect().top + window.scrollY;
+                        
+                        window.scrollTo({
+                            top: targetPosition - navHeight - 20,
+                            behavior: 'smooth'
+                        });
+                    }
+                });
+            });
+
+            // Active nav highlighting
+            const desktopLinks = document.querySelectorAll('.nav-link');
+            
+            function updateActiveLink() {
+                let currentSection = '';
+                const scrollPos = window.scrollY + 180;
+                
+                sections.forEach(section => {
+                    if (!section) return;
+                    const sectionTop = section.offsetTop;
+                    if (scrollPos >= sectionTop) {
+                        currentSection = section.getAttribute('id');
+                    }
+                });
+                
+                desktopLinks.forEach(link => {
+                    link.classList.remove('active');
+                    const href = link.getAttribute('href');
+                    if (href === `#${currentSection}`) {
+                        link.classList.add('active');
+                    }
+                });
+            }
+
+            window.addEventListener('scroll', () => {
+                updateActiveLink();
+                
+                // Subtle navbar bg on scroll
+                if (navbar) {
+                    if (window.scrollY > 50) {
+                        navbar.style.backgroundColor = 'rgba(2, 6, 23, 0.96)';
+                    } else {
+                        navbar.style.backgroundColor = 'rgba(2, 6, 23, 0.95)';
+                    }
+                }
+            }, { passive: true });
+
+            // Initial call
+            setTimeout(updateActiveLink, 600);
+        }
+
+
+
+
+
+        // Subtle chess accent decorative pieces (in some sections)
+        function addDecorativeAccents() {
+            // Optional: small floating knight on the club section title (very subtle)
+            const clubSection = document.getElementById('club');
+            if (clubSection) {
+                const heading = clubSection.querySelector('h2');
+                if (heading) {
+                    const accent = document.createElement('span');
+                    accent.className = 'chess-accent absolute -right-2 -top-3 text-4xl select-none pointer-events-none hidden lg:block';
+                    accent.textContent = '♞';
+                    accent.style.color = '#d4af37';
+                    heading.style.position = 'relative';
+                    heading.appendChild(accent);
+                }
+            }
+        }
+
+        // Reusable diploma carousel
+        function createDiplomaCarousel(mainId, thumbsId, imageList) {
+            const mainImg = document.getElementById(mainId);
+            const thumbsContainer = document.getElementById(thumbsId);
+            if (!mainImg || !thumbsContainer) return;
+
+            let currentIndex = 0;
+            let interval = null;
+
+            function updateMain(index, withFade = true) {
+                if (!mainImg) return;
+                if (withFade) {
+                    mainImg.classList.add('fade');
+                    setTimeout(() => {
+                        mainImg.src = imageList[index].src;
+                        mainImg.alt = imageList[index].alt;
+                        mainImg.classList.remove('fade');
+                    }, 280);
+                } else {
+                    mainImg.src = imageList[index].src;
+                    mainImg.alt = imageList[index].alt;
+                }
+            }
+
+            function updateActiveThumb() {
+                const thumbs = thumbsContainer.querySelectorAll('img');
+                thumbs.forEach((thumb, i) => {
+                    thumb.classList.toggle('active', i === currentIndex);
+                });
+            }
+
+            function goTo(index) {
+                currentIndex = index;
+                updateMain(currentIndex);
+                updateActiveThumb();
+                startAutoRotate();
+            }
+
+            function next() {
+                currentIndex = (currentIndex + 1) % imageList.length;
+                updateMain(currentIndex);
+                updateActiveThumb();
+            }
+
+            function startAutoRotate() {
+                if (interval) clearInterval(interval);
+                interval = setInterval(next, 4200);
+            }
+
+            // build thumbs
+            thumbsContainer.innerHTML = '';
+            imageList.forEach((dip, index) => {
+                const thumb = document.createElement('img');
+                thumb.src = dip.src;
+                thumb.alt = dip.alt;
+                thumb.addEventListener('click', () => goTo(index));
+                thumbsContainer.appendChild(thumb);
+            });
+
+            // init
+            updateMain(0, false);
+            updateActiveThumb();
+            startAutoRotate();
+
+            const mainArea = mainImg.parentElement;
+            if (mainArea) {
+                mainArea.addEventListener('mouseenter', () => { if (interval) clearInterval(interval); });
+                mainArea.addEventListener('mouseleave', startAutoRotate);
+            }
+        }
+
+        function initDiplomaCarousel() {
+            // Мои достижения (первые присланные грамоты) - чистые без фона
+            const mineList = [
+                { src: 'images/diploma-shooting.jpg', alt: '1 место по стрельбе' },
+                { src: 'images/diploma-dynamo.jpg', alt: '1 место Динамо' },
+                { src: 'images/diploma-checkers.jpg', alt: '3 место по шашкам' },
+                { src: 'images/diploma-tsevd.jpeg', alt: 'Грамота ЦЭВД' },
+                { src: 'images/diploma-pg-maudo.jpg', alt: 'ПГ МАУДО ЦЭВД' },
+                { src: 'images/diploma-1.jpg', alt: 'Грамота' },
+                { src: 'images/diploma-2.jpg', alt: 'Грамота' },
+                { src: 'images/diploma-3.jpg', alt: 'Грамота' },
+                { src: 'images/diploma-4.jpg', alt: 'Грамота' }
+            ];
+            createDiplomaCarousel('diploma-display', 'diploma-thumbs', mineList);
+
+            // Достижения моих учеников (вторые присланные грамоты)
+            const studentsList = [
+                { src: 'images/diploma-5.png', alt: 'Грамота' },
+                { src: 'images/diploma-6.jpg', alt: 'Грамота' },
+                { src: 'images/diploma-7.jpg', alt: 'Грамота' },
+                { src: 'images/diploma-8.jpg', alt: 'Грамота' },
+                { src: 'images/diploma-9.jpg', alt: 'Грамота' },
+                { src: 'images/diploma-10.png', alt: 'Грамота' }
+            ];
+            createDiplomaCarousel('diploma-students-display', 'diploma-students-thumbs', studentsList);
+        }
+
+        // Initialize everything
+        function initializeWebsite() {
+            initializeTailwind();
+            
+            // Chessboard
+            initChessboard();
+            setupChessboardInteractions();
+            
+            // Sync rank labels to exact square rows
+            function syncRankLabels() {
+                const board = document.getElementById('chessboard');
+                const labels = document.querySelector('.rank-labels');
+                if (!board || !labels) return;
+                // Use the board's content height (excluding border)
+                const h = board.clientHeight;
+                labels.style.height = h + 'px';
+            }
+            syncRankLabels();
+            window.addEventListener('resize', () => {
+                setTimeout(syncRankLabels, 50);
+            });
+            
+            // Diplomas Carousel (Мои достижения)
+            initDiplomaCarousel();
+            
+            // Navigation
+            initMobileMenu();
+            initNavigation();
+            
+
+            
+            // Decorative elements
+            addDecorativeAccents();
+            
+            // Animation only triggers on board click (no auto-play)
+            
+            // Re-attach pawn after resize so it stays perfectly centered in its square
+            let resizeTimer;
+            window.addEventListener('resize', () => {
+                clearTimeout(resizeTimer);
+                resizeTimer = setTimeout(() => {
+                    const board = document.getElementById('chessboard');
+                    const pawn = document.getElementById('pawn-piece');
+                    if (!board || !pawn || isAnimating) return;
+
+                    // Re-attach to e2 using square-flex method for true centering
+                    attachPawnToSquare(pawn, 4, 1);
+                }, 160);
+            });
+
+            // Accessibility: announce board
+            const board = document.getElementById('chessboard');
+            if (board) {
+                board.setAttribute('aria-label', 'Интерактивная шахматная доска. Нажмите, чтобы увидеть ход пешки из e2 в e4');
+            }
+
+            console.log('%c[e2e4] Premium chess visiting card ready.', 'color:#64748b');
+        }
+
+        // Boot
+        if (document.readyState === 'loading') {
+            document.addEventListener('DOMContentLoaded', initializeWebsite);
+        } else {
+            initializeWebsite();
+        }
+    </script>
+</body>
+</html>
