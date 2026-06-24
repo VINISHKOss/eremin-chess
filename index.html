@@ -449,6 +449,69 @@
             pointer-events: none;
         }
 
+        /* Animated floating chess pieces — edges only, above bg, below nav */
+        .chess-bg-pieces {
+            position: fixed;
+            inset: 0;
+            z-index: 30;
+            pointer-events: none;
+            overflow: hidden;
+        }
+
+        .floating-piece {
+            position: absolute;
+            opacity: 0;
+            user-select: none;
+            line-height: 1;
+            will-change: opacity, transform;
+            animation: pieceFloatFade 16s ease-in-out infinite;
+            filter: drop-shadow(0 0 12px rgba(212, 175, 55, 0.25));
+        }
+
+        .floating-piece.piece-white {
+            color: rgba(245, 245, 240, 0.85);
+            filter: drop-shadow(0 0 10px rgba(245, 245, 240, 0.15));
+        }
+
+        .floating-piece.piece-gold {
+            color: rgba(212, 175, 55, 0.9);
+        }
+
+        @keyframes pieceFloatFade {
+            0%, 100% {
+                opacity: 0;
+                transform: translateY(10px) rotate(0deg) scale(0.8);
+            }
+            8% {
+                opacity: 0.28;
+                transform: translateY(0) rotate(-6deg) scale(1);
+            }
+            40% {
+                opacity: 0.18;
+                transform: translateY(-18px) rotate(4deg) scale(1.05);
+            }
+            75% {
+                opacity: 0.1;
+                transform: translateY(-30px) rotate(-3deg) scale(1);
+            }
+            92% {
+                opacity: 0;
+                transform: translateY(-42px) rotate(0deg) scale(0.85);
+            }
+        }
+
+        @media (prefers-reduced-motion: reduce) {
+            .floating-piece {
+                animation-duration: 24s;
+            }
+        }
+
+        @media (max-width: 640px) {
+            .floating-piece {
+                font-size: 2rem !important;
+            }
+        }
+
         /* Mobile menu */
         .mobile-menu {
             transition: all 0.3s ease;
@@ -498,6 +561,8 @@
     </style>
 </head>
 <body class="bg-premium text-warm body-elegant">
+    <div id="chess-bg-pieces" class="chess-bg-pieces" aria-hidden="true"></div>
+    <div class="relative z-10">
     <!-- ========================================
          СКРЫТЫЕ КОММЕНТАРИИ ДЛЯ КАСТОМИЗАЦИИ
          ========================================
@@ -581,12 +646,7 @@
 
     <!-- ==================== HERO ==================== -->
     <header id="hero" class="relative min-h-[100dvh] flex items-center pt-8 pb-12 border-b border-slate-800">
-        <!-- Background with subtle chess pattern -->
-        <div class="absolute inset-0 bg-[#020617]"></div>
-        <div class="absolute inset-0 chess-pattern"></div>
-        
-        <!-- Very subtle overlay gradient -->
-        <div class="absolute inset-0 bg-gradient-to-b from-[#020617]/70 via-[#020617]/30 to-[#020617]/90"></div>
+        <div class="absolute inset-0 bg-gradient-to-b from-[#020617]/30 via-transparent to-[#020617]/40 pointer-events-none z-0"></div>
 
         <div class="relative max-w-7xl mx-auto px-4 sm:px-6 pt-8 sm:pt-10">
             <div class="grid md:grid-cols-12 gap-x-8 lg:gap-x-16 items-center">
@@ -838,7 +898,7 @@
             </a>
         </div>
     </section>
-    <section id="benefits" class="bg-[#0a101f] py-12 sm:py-16">
+    <section id="benefits" class="py-12 sm:py-16">
         <div class="max-w-7xl mx-auto px-6">
             <div class="max-w-2xl mb-10">
                 <div class="text-bronze text-xs tracking-[3px] mb-3">ПОЧЕМУ РОДИТЕЛИ ВЫБИРАЮТ НАС</div>
@@ -932,14 +992,10 @@
         </div>
 
         <!-- Stats -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-px bg-slate-800 rounded-2xl overflow-hidden mb-12">
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-px bg-slate-800 rounded-2xl overflow-hidden mb-12">
             <div class="bg-navy p-7 text-center">
                 <div class="text-4xl font-semibold tracking-tight text-gold stat-number">500+</div>
                 <div class="mt-1 text-sm text-[#a8a090]">Учеников клуба</div>
-            </div>
-            <div class="bg-navy p-7 text-center">
-                <div class="text-4xl font-semibold tracking-tight text-gold stat-number">150+</div>
-                <div class="mt-1 text-sm text-[#a8a090]">Призовых мест на турнирах</div>
             </div>
             <div class="bg-navy p-7 text-center">
                 <div class="text-4xl font-semibold tracking-tight text-gold stat-number">15</div>
@@ -991,7 +1047,7 @@
 
 
     <!-- ==================== CONTACTS + FOOTER ==================== -->
-    <footer id="contacts" class="bg-[#020617] border-t border-slate-800">
+    <footer id="contacts" class="border-t border-slate-800">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 pt-10 pb-6 sm:pt-14 sm:pb-9">
             
             <div class="grid md:grid-cols-12 gap-y-12">
@@ -1026,7 +1082,7 @@
                 <div class="md:col-span-7">
                     <div class="md:text-right">
                         <p class="text-xl leading-tight max-w-lg md:ml-auto text-[#d1c7b5]">
-                            Шахматы — это не спорт.<br>
+                            Шахматы — это не просто спорт.<br>
                             Это искусство мыслить ясно и действовать уверенно.
                         </p>
                     </div>
@@ -1042,6 +1098,7 @@
             </div>
         </div>
     </footer>
+    </div>
 
     <script>
         // Tailwind script configuration
@@ -1431,6 +1488,47 @@
 
 
 
+        // Floating chess pieces — appear and fade in the background
+        function initFloatingChessPieces() {
+            const container = document.getElementById('chess-bg-pieces');
+            if (!container) return;
+
+            container.innerHTML = '';
+
+            const whitePieces = ['♔', '♕', '♖', '♗', '♘', '♙'];
+            const blackPieces = ['♚', '♛', '♜', '♝', '♞', '♟'];
+            const isMobile = window.innerWidth < 640;
+            const count = isMobile ? 8 : 14;
+
+            // Strictly along screen edges — never over center text column
+            const positions = [
+                { left: 2, top: 8 }, { left: 93, top: 6 },
+                { left: 1, top: 35 }, { left: 94, top: 32 },
+                { left: 3, top: 62 }, { left: 92, top: 58 },
+                { left: 2, top: 85 }, { left: 93, top: 82 },
+                { left: 6, top: 18 }, { left: 88, top: 48 },
+                { left: 5, top: 72 }, { left: 89, top: 15 },
+                { left: 4, top: 92 }, { left: 91, top: 68 }
+            ];
+
+            for (let i = 0; i < count; i++) {
+                const el = document.createElement('span');
+                const pos = positions[i % positions.length];
+                const isWhite = Math.random() > 0.4;
+                const pool = isWhite ? whitePieces : blackPieces;
+
+                el.className = `floating-piece ${isWhite ? 'piece-white' : 'piece-gold'}`;
+                el.textContent = pool[Math.floor(Math.random() * pool.length)];
+                el.style.left = `${pos.left}%`;
+                el.style.top = `${pos.top}%`;
+                el.style.fontSize = `${2.5 + Math.random() * 2.5}rem`;
+                el.style.animationDuration = `${10 + Math.random() * 10}s`;
+                el.style.animationDelay = `${i * 1.2}s`;
+
+                container.appendChild(el);
+            }
+        }
+
         // Subtle chess accent decorative pieces (in some sections)
         function addDecorativeAccents() {
             // Optional: small floating knight on the club section title (very subtle)
@@ -1577,6 +1675,9 @@
             
 
             
+            // Animated background pieces
+            initFloatingChessPieces();
+
             // Decorative elements
             addDecorativeAccents();
             
